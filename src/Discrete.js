@@ -37,15 +37,19 @@ class Discrete extends React.Component {
                             <p>For the remainder of our discussion, we will always assume <MathJax.Node inline formula={`f`} /> is a continuous function
                                 and <MathJax.Node inline formula={`M = R^{n}`} />
                             </p>
-                            <p>Proposition 2. Let <MathJax.Node inline formula={`f \\in C^{1}(R^{n})`} /> and have a fixed point <MathJax.Node inline formula={`x_{0}`} />.
-                                Then <MathJax.Node inline formula={`x_0{}`} /> is a sink if <MathJax.Node inline formula={`|Df(x_{0})| < 1`} />, a source if <MathJax.Node inline formula={`|Df(x_{0})| > 1`} />,
+                            <p>Proposition 2. Let <MathJax.Node inline formula={`f \\in C^{1}(\\mathbf{R})`} /> and have a fixed point <MathJax.Node inline formula={`x_{0}`} />.
+                                Then <MathJax.Node inline formula={`x_0{}`} /> is a sink if <MathJax.Node inline formula={`|f'(x_{0})| < 1`} />, a source if <MathJax.Node inline formula={`|f'(x_{0})| > 1`} />,
                                 and otherwise we cannot conclude anything.
                             </p>
                             <p>
-                                Proof: This proposition is pretty trivial. Just choose <MathJax.Node inline formula={`\\delta > 0`} /> s.t. <MathJax.Node inline formula={`|Df(x) - Df(x_{0})| < \\epsilon`} /> for all <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />. Then
-                                <MathJax.Node inline formula={`|f(x) - f(x_{0})| \\leq |x-x_{0}|\\cdot (|Df(x_{0})| + \\epsilon)`} />. If <MathJax.Node inline formula={`|Df(x_{0})| < 1`} />, then taking  
-                                <MathJax.Node inline formula={`\\epsilon`} /> sufficiently small makes the RHS go to a value less than one - and if <MathJax.Node inline formula={`|Df(x_{0})| > 1`} /> we get 
-                                <MathJax.Node inline formula={`|f(x) - f(x_{0})| > |Df(x_{0})|\\cdot |x-x_{0}|`} /> by just taking the convex line connecting <MathJax.Node inline formula={`x`} /> and <MathJax.Node inline formula={`x_{0}`} />.
+                                Proof: This proposition is pretty trivial. Just choose <MathJax.Node inline formula={`\\delta > 0`} /> s.t. <MathJax.Node inline formula={`|f'(x) - f'(x_{0})| < \\epsilon`} /> for all <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />. Then
+                                we can assume <MathJax.Node inline formula={`f'(x)`} /> has the same sign as <MathJax.Node inline formula={`f'(x_{0})`} /> for <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />. Thus, for <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />
+                                we have <MathJax.Node inline formula={`|x-x_{0}|\\cdot (|f'(x_{0})| - \\epsilon) \\leq |f(x) - f(x_{0})| \\leq |x-x_{0}|\\cdot (|f'(x_{0})| + \\epsilon) `} />. If <MathJax.Node inline formula={`|f'(x_{0})| > 1`} />, we get the
+                                difference between the <MathJax.Node inline formula={`f`} /> values in absolute value is larger than the absolute difference in the <MathJax.Node inline formula={`x`} /> values. The opposite happens if <MathJax.Node inline formula={`|f'(x_{0})|<1`} />.
+                                <br/>
+
+                                When <MathJax.Node inline formula={`|f'(x_{0})| = 1`} />, things become too sensitive (the derivitive can immediately become larger or smaller in absolute value). So we can't really
+                                conclude anything. The following examples illustrate this:
                             </p>
                             <img src={discrete_iteration_stable} style={{maxWidth: "70%"}} />
                             <img src={iterations_pt_2} style={{maxWidth: "70%"}} />
