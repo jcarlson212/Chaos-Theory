@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import 'video-react/dist/video-react.css'; // import css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';

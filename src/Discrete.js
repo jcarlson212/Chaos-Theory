@@ -52,8 +52,14 @@ class Discrete extends React.Component {
                                 conclude anything. The following examples illustrate this:
                             </p>
                             <img src={discrete_iteration_stable} style={{maxWidth: "70%"}} />
+                            <br/>
                             <img src={iterations_pt_2} style={{maxWidth: "70%"}} />
+                            <br/>
                             <img src={iterations_pt_3} style={{maxWidth: "70%"}} />
+                            <br/>
+                            <p>Below we have an example of a stable point for <MathJax.Node inline formula={`f(x) = 1.5\\cdot \\sin(x-1)`} /> at <MathJax.Node inline formula={`x_{0} = -1.20675`} />. Since <MathJax.Node inline formula={`f'(x) = 1.5\\cdot \\cos(x-1)`} />, 
+                            <MathJax.Node inline formula={`|f'(x_{0})| = |-.89| < 1`} /> - so by our proposition this should be a stable fixed point, as the following picture shows:
+                             </p>
                             <img src={stable_iterations} style={{maxWidth: "70%"}} />
 
                         </div>
