@@ -7,6 +7,7 @@ import Lorenz from './Lorenz'
 import Discrete from './Discrete'
 import Home from './Home'
 import Applications from './Applications'
+import MotivationChaos from './MotivationChaos'
 
 
 
@@ -30,6 +31,8 @@ class App extends React.Component {
       page_component = <Home></Home>
     }else if(this.state.page === "discrete"){
       page_component = <Discrete></Discrete>
+    }else if(this.state.page === "motivationforchaos"){
+      page_component = <MotivationChaos></MotivationChaos>
     }else if(this.state.page === "lorenz"){
       page_component = <Lorenz></Lorenz>
     }else{
@@ -42,6 +45,7 @@ class App extends React.Component {
           <Nav className="mr-auto">
             <Nav.Link href="#home" onClick={ () => this.load_page("home") }>Home</Nav.Link>
             <Nav.Link href="#discretedynamicalsystems" onClick={ () => this.load_page("discrete") }>Discrete Dynamical Systems</Nav.Link>
+            <Nav.Link href="#motivationforchaos" onClick={ () => this.load_page("motivationforchaos") }>Motivation For Chaos</Nav.Link>
             <Nav.Link href="#lorenzequation" onClick={ () => this.load_page("lorenz") }>Lorenz Equation</Nav.Link>
             <Nav.Link href="#applications" onClick={ () => this.load_page("applications") }>Applications</Nav.Link>
           </Nav>
