@@ -46,7 +46,7 @@ class App extends React.Component {
           <Nav className="mr-auto">
             <Nav.Link href="#home" onClick={ () => this.load_page("home") }>Home</Nav.Link>
             <Nav.Link href="#discretedynamicalsystems" onClick={ () => this.load_page("discrete") }>Discrete Dynamical Systems</Nav.Link>
-            <Nav.Link href="#motivationforchaos" onClick={ () => this.load_page("motivationforchaos") }>Motivation For Chaos</Nav.Link>
+            <Nav.Link href="#motivationforchaos" onClick={ () => this.load_page("motivationforchaos") }>Chaos Theory</Nav.Link>
             <Nav.Link href="#lorenzequation" onClick={ () => this.load_page("lorenz") }>Lorenz Equation</Nav.Link>
             <Nav.Link href="#applications" onClick={ () => this.load_page("applications") }>Applications</Nav.Link>
           </Nav>

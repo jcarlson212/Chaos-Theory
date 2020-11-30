@@ -6,6 +6,9 @@ import discrete_iteration_stable from './discrete_iteration_stable.jpg';
 import iterations_pt_2 from './iterations_pt_2.jpg';
 import iterations_pt_3 from './iterations_pt_3.jpg';
 import stable_iterations from './stable_iterations.jpg';
+import shartoski from './shartoski.PNG';
+import shark_ex_3_pt from './shark_ex_3_pt.jpg';
+import shark_ex_diff_eqn from './shark_ex_diff_eqn.jpg';
 
 const tex = `f(x) = \\int_{-\\infty}^\\infty
 \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}
@@ -51,7 +54,7 @@ class Discrete extends React.Component {
                                 When <MathJax.Node inline formula={`|f'(x_{0})| = 1`} />, things become too sensitive (the derivitive can immediately become larger or smaller in absolute value). So we can't really
                                 conclude anything. The following examples illustrate this:
                             </p>
-                            <img src={discrete_iteration_stable} style={{maxWidth: "70%"}} />
+                            <img src={discrete_iteration_stable} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/>
                             <img src={iterations_pt_2} style={{maxWidth: "70%"}} />
                             <br/>
@@ -62,6 +65,19 @@ class Discrete extends React.Component {
                              </p>
                             <img src={stable_iterations} style={{maxWidth: "70%"}} />
 
+                            <p>Sharkovskii Theorem. Let <MathJax.Node inline formula={`f: I \\to I`} /> continuous for some interval <MathJax.Node inline formula={`I \\subset R`} />. Consider
+                            the following ordering of the natural numbers (which is a total order, but not well-ordered):
+                            </p>
+                            <img src={shartoski} style={{maxWidth: "70%"}} />
+                            <p>If <MathJax.Node inline formula={`f`} /> has a periodic point of length m then <MathJax.Node inline formula={`f`} /> will have a periodic point of length n for all
+                            <MathJax.Node inline formula={`n > m`} />.
+                            </p>
+                            <p>The following is an example of a function with a period of length three (<MathJax.Node inline formula={`f(x)=-\\frac{19}{30}x^{2}+\\frac{51}{10}-\\frac{8}{3}`} />):</p>
+                            <img src={shark_ex_3_pt} style={{maxWidth: "70%"}}/>
+                            <br/>
+                            <br/>
+                            <p>Here is another way of visualizing it:</p>
+                            <img src={shark_ex_diff_eqn} style={{maxWidth: "70%"}}/>
                         </div>
 
                     </MathJax.Provider>
