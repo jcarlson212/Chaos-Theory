@@ -47,11 +47,11 @@ class MotivationChaos extends React.Component {
                                  Roughly speaking, this means that the initial conditions are sensitive and arbitrarily small regions visit every other region. The initial conditions are sensitive in the sense that
                                  if you try to approximate an input value, that approximation is not guranteed to work nomatter how accurate it is.
                              </p>
-                            <img src={chaos_100_simulations} style={{maxWidth: "70%"}} />
-                            <img src={chaos_1000_simulations} style={{maxWidth: "70%"}} />
-                            <img src={chaos_10000_simulations} style={{maxWidth: "70%"}} />
-                            <img src={chaos_line_graph_100_iterations} style={{maxWidth: "70%"}} />
-                            <img src={chaos_line_graph_1000_iterations} style={{maxWidth: "70%"}} />
+                            <img src={chaos_100_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <img src={chaos_1000_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <img src={chaos_10000_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <img src={chaos_line_graph_100_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <img src={chaos_line_graph_1000_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
                         </div>
 
                     </MathJax.Provider>

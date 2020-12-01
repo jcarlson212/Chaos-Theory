@@ -3,6 +3,7 @@ import 'video-react/dist/video-react.css'; // import css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
+import '../node_modules/react-vis/dist/style.css';
 import React from 'react';
 import Lorenz from './Lorenz'
 import Discrete from './Discrete'

@@ -40,9 +40,9 @@ class Lorenz extends React.Component {
                             <ControlBar disableCompletely={true} />
                         </Player>
 
-                        <img src={lorenz_x_vs_t} style={{maxWidth: "70%"}} />
-                        <img src={lorenz_y_vs_t} style={{maxWidth: "70%"}} />
-                        <img src={lorenz_z_vs_t} style={{maxWidth: "70%"}} />
+                        <img src={lorenz_x_vs_t} style={{maxWidth: "70%", border:"2px solid black"}} />
+                        <img src={lorenz_y_vs_t} style={{maxWidth: "70%", border:"2px solid black"}} />
+                        <img src={lorenz_z_vs_t} style={{maxWidth: "70%", border:"2px solid black"}} />
                         </div>
 
                     </MathJax.Provider>
