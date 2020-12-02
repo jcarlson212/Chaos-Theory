@@ -32,19 +32,18 @@ class Discrete extends React.Component {
                     <br/><br/>
                     <MathJax.Provider>
                         <div>
-                            <p>To start, we present the basic definition of a discrete dynamical system:</p>
-                            <p>Definition 1. A discrete dynamical system is given by the equation <MathJax.Node formula={dynamic_def} />
+                            <p style={{textAlign: "left"}}>Definition. A discrete dynamical system is given by the equation <MathJax.Node formula={dynamic_def} />
                                 where <MathJax.Node inline formula={`f: M \\rightarrow M`} /> for any arbitrary metric space <MathJax.Node inline formula={`M`} />
                                 and <MathJax.Node inline formula={`n \\in \\mathbf{N}`} />
                             </p>
-                            <p>For the remainder of our discussion, we will always assume <MathJax.Node inline formula={`f`} /> is a continuous function
+                            <p style={{textAlign: "left"}}>For the remainder of our discussion, we will always assume <MathJax.Node inline formula={`f`} /> is a continuous function
                                 and <MathJax.Node inline formula={`M = R^{n}`} />
                             </p>
-                            <p>Proposition 2. Let <MathJax.Node inline formula={`f \\in C^{1}(\\mathbf{R})`} /> and have a fixed point <MathJax.Node inline formula={`x_{0}`} />.
+                            <p style={{textAlign: "left"}}>Proposition 2. Let <MathJax.Node inline formula={`f \\in C^{1}(\\mathbf{R})`} /> and have a fixed point <MathJax.Node inline formula={`x_{0}`} />.
                                 Then <MathJax.Node inline formula={`x_0{}`} /> is a sink if <MathJax.Node inline formula={`|f'(x_{0})| < 1`} />, a source if <MathJax.Node inline formula={`|f'(x_{0})| > 1`} />,
                                 and otherwise we cannot conclude anything.
                             </p>
-                            <p>
+                            <p style={{textAlign: "left"}}>
                                 Proof: This proposition is pretty trivial. Just choose <MathJax.Node inline formula={`\\delta > 0`} /> s.t. <MathJax.Node inline formula={`|f'(x) - f'(x_{0})| < \\epsilon`} /> for all <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />. Then
                                 we can assume <MathJax.Node inline formula={`f'(x)`} /> has the same sign as <MathJax.Node inline formula={`f'(x_{0})`} /> for <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />. Thus, for <MathJax.Node inline formula={`x \\in B_{\\delta}(x_{0})`} />
                                 we have <MathJax.Node inline formula={`|x-x_{0}|\\cdot (|f'(x_{0})| - \\epsilon) \\leq |f(x) - f(x_{0})| \\leq |x-x_{0}|\\cdot (|f'(x_{0})| + \\epsilon) `} />. If <MathJax.Node inline formula={`|f'(x_{0})| > 1`} />, we get the
