@@ -10,6 +10,8 @@ import chaos_line_graph_100_iterations from './chaos_line_graph_100_iterations.j
 import chaos_line_graph_1000_iterations from './chaos_line_graph_1000_iterations.jpg'
 import new_double_map from './new_double_map.jpg'
 import new_tent_map_chaos from './new_tent_map_chaos.jpg'
+import doubling_map_0003 from './doubling_map_0003.jpg';
+import unstable_iterate from './unstable_iterate.jpg';
 
 class MotivationChaos extends React.Component {
     state = {
@@ -79,6 +81,8 @@ class MotivationChaos extends React.Component {
                                 </ol>
                                 This completes the proof. I left out some quantifiers and definitions for <MathJax.Node inline formula={`\\epsilon > 0`} /> and <MathJax.Node inline formula={`n_{0}`} />, but it should be clear where they go (and if not, it would probably make a good exercise in finding where they go).
                             </p>
+                            <img src={doubling_map_0003} style={{maxWidth: "70%", border: "2px solid black"}} />
+                            <img src={unstable_iterate} style={{maxWidth: "70%", border: "2px solid black"}} />
                         </div>
 
                     </MathJax.Provider>

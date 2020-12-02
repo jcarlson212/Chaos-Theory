@@ -10,6 +10,7 @@ import lorenz_x_vs_t from './lorenz_x_vs_t.jpg';
 import lorenz_y_vs_t from './lorenz_y_vs_t.jpg';
 import lorenz_z_vs_t from './lorenz_z_vs_t.jpg';
 
+
 class Lorenz extends React.Component {
     state = {
         

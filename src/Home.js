@@ -82,9 +82,9 @@ class Home extends React.Component {
                 <Jumbotron fluid>
                     <Container>
                         <h1>Chaos</h1>
-                        <p>
+                        <i>
                         This is a website we made for our final project on Chaos Theory
-                        </p>
+                        </i>
                         <XYPlot height={particle_container_height} width={particle_container_width}>
                             <HeatmapSeries data={new_red_data} color="black" />
                             <HeatmapSeries data={new_blue_data} color="red" />
