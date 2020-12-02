@@ -55,28 +55,33 @@ class Discrete extends React.Component {
                                 conclude anything. The following examples illustrate this:
                             </p>
                             <img src={discrete_iteration_stable} style={{maxWidth: "70%", border:"2px solid black"}} />
-                            <br/>
+                            <br/><br/>
                             <img src={iterations_pt_2} style={{maxWidth: "70%", border:"2px solid black"}} />
-                            <br/>
+                            <br/><br/>
                             <img src={iterations_pt_3} style={{maxWidth: "70%", border:"2px solid black"}} />
-                            <br/>
+                            <br/><br/>
                             <p>Below we have an example of a stable point for <MathJax.Node inline formula={`f(x) = 1.5\\cdot \\sin(x-1)`} /> at <MathJax.Node inline formula={`x_{0} = -1.20675`} />. Since <MathJax.Node inline formula={`f'(x) = 1.5\\cdot \\cos(x-1)`} />, 
                             <MathJax.Node inline formula={`|f'(x_{0})| = |-.89| < 1`} /> - so by our proposition this should be a stable fixed point, as the following picture shows:
                              </p>
+                             <br/><br/>
                             <img src={stable_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
-
+                            <br/><br/>
                             <p>Sharkovskii Theorem. Let <MathJax.Node inline formula={`f: I \\to I`} /> continuous for some interval <MathJax.Node inline formula={`I \\subset R`} />. Consider
                             the following ordering of the natural numbers (which is a total order, but not well-ordered):
                             </p>
+                            <br/><br/>
                             <img src={shartoski} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
                             <p>If <MathJax.Node inline formula={`f`} /> has a periodic point of length m then <MathJax.Node inline formula={`f`} /> will have a periodic point of length n for all
                             <MathJax.Node inline formula={`n > m`} />.
                             </p>
                             <p>The following is an example of a function with a period of length three (<MathJax.Node inline formula={`f(x)=-\\frac{19}{30}x^{2}+\\frac{51}{10}-\\frac{8}{3}`} />):</p>
+                            <br/><br/>
                             <img src={shark_ex_3_pt} style={{maxWidth: "70%", border:"2px solid black"}}/>
                             <br/>
                             <br/>
                             <p>Here is another way of visualizing it:</p>
+                            <br/><br/>
                             <img src={shark_ex_diff_eqn} style={{maxWidth: "70%", border:"2px solid black"}}/>
                         </div>
 

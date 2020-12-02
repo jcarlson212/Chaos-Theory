@@ -10,8 +10,7 @@ import Discrete from './Discrete'
 import Home from './Home'
 import Applications from './Applications'
 import MotivationChaos from './MotivationChaos'
-
-
+import About from './About'
 
 class App extends React.Component {
 
@@ -37,20 +36,26 @@ class App extends React.Component {
       page_component = <MotivationChaos></MotivationChaos>
     }else if(this.state.page === "lorenz"){
       page_component = <Lorenz></Lorenz>
+    }else if(this.state.page == "about"){
+      page_component = <About></About>
     }else{
       page_component = <Applications></Applications>
     }
     return (
       <div className="App">
-        <Navbar bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Brand href="#home" onClick={ () => this.load_page("home") }>Chaos</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#home" onClick={ () => this.load_page("home") }>Home</Nav.Link>
             <Nav.Link href="#discretedynamicalsystems" onClick={ () => this.load_page("discrete") }>Discrete Dynamical Systems</Nav.Link>
             <Nav.Link href="#motivationforchaos" onClick={ () => this.load_page("motivationforchaos") }>Chaos Theory</Nav.Link>
             <Nav.Link href="#lorenzequation" onClick={ () => this.load_page("lorenz") }>Lorenz Equation</Nav.Link>
             <Nav.Link href="#applications" onClick={ () => this.load_page("applications") }>Hausdorff Dimension and Strange Attractors</Nav.Link>
+            <Nav.Link href="#About" onClick={ () => this.load_page("about") }>About</Nav.Link>
           </Nav>
+          </Navbar.Collapse>
         </Navbar>
         {page_component}
       </div>

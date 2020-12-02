@@ -51,14 +51,22 @@ class MotivationChaos extends React.Component {
                                  Roughly speaking, this means that the initial conditions are sensitive and arbitrarily small regions visit every other region. The initial conditions are sensitive in the sense that
                                  if you try to approximate an input value, that approximation is not guranteed to work nomatter how accurate it is.
                              </p>
+                             <br/><br/>
                             <img src={chaos_100_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
                             <img src={chaos_1000_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
                             <img src={chaos_10000_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
                             <img src={chaos_line_graph_100_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
                             <img src={chaos_line_graph_1000_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
 
                             <img src={new_double_map} style={{maxWidth: "70%", border: "2px solid black"}} />
+                            <br/><br/>
                             <img src={new_tent_map_chaos} style={{maxWidth: "70%", border: "2px solid black"}} />
+                            <br/><br/>
 
                             <p>
                                 Lets now consider an interesting map: the shift map. Define the shift map <MathJax.Node inline formula={`T: \\{0,1 \\}^{\\mathbf{N}} \\to \\{0,1 \\}^{\\mathbf{N}}`} /> is given by <MathJax.Node inline formula={`T((x_{1}, x_{2},\\cdots)) = (x_{2}, x_{3}, \\cdots)`} />.
@@ -81,7 +89,9 @@ class MotivationChaos extends React.Component {
                                 </ol>
                                 This completes the proof. I left out some quantifiers and definitions for <MathJax.Node inline formula={`\\epsilon > 0`} /> and <MathJax.Node inline formula={`n_{0}`} />, but it should be clear where they go (and if not, it would probably make a good exercise in finding where they go).
                             </p>
+                            <br/><br/>
                             <img src={doubling_map_0003} style={{maxWidth: "70%", border: "2px solid black"}} />
+                            <br/><br/>
                             <img src={unstable_iterate} style={{maxWidth: "70%", border: "2px solid black"}} />
                         </div>
 

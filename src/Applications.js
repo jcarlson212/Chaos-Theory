@@ -40,7 +40,8 @@ class Applications extends React.Component {
                                 This defines a premeasure on all open sets <MathJax.Node inline formula={`U`} /> in the subspace topology of <MathJax.Node inline formula={`M`} />. Hence, we get a borel <MathJax.Node inline formula={`\\sigma`} />-algebra 
                                 on the set of all subsets that are "nice" (<MathJax.Node inline formula={`\\mu^{\\alpha}(A) = \\mu^{\\alpha}(A-B) + \\mu^{\\alpha}(B-A)`} /> for all <MathJax.Node inline formula={`A`} /> implies <MathJax.Node inline formula={`B`} /> is in our sigma algebra)
                                 by Caratheodory's Theorem, with <MathJax.Node inline formula={`\\mu^{\\alpha}`} /> a measure on this sigma algebra.
-                                The Hausdorff dimension of <MathJax.Node inline formula={`U`} /> is defined as <MathJax.Node inline formula={`\\dim_{H}(U) = \\inf \\{\\alpha\\text{ }|\\text{ } \\mu^{\\alpha}(U) = 0\\} = \\sup \\{\\alpha\\text{ }|\\text{ } \\mu^{\\alpha}(U) = \\infty\\}`} />.
+                                The Hausdorff dimension of <MathJax.Node inline formula={`U`} /> is defined as <MathJax.Node inline formula={`\\dim_{H}(U) = \\inf \\{\\alpha\\text{ }|\\text{ } \\mu^{\\alpha}(U) = 0\\} = \\sup \\{\\alpha\\text{ }|\\text{ } \\mu^{\\alpha}(U) = \\infty\\}`} />. We can define this for closed sets with infinitely many 
+                                points analagously. For finitely many points, there can be some difficulties - namely the sup that is shown below might not be well-defined, but in the grand scheme of things this is not at all an issue.
                             </p>
                             <p style={{textAlign:"left"}}>
                                 Proposition: <MathJax.Node inline formula={`dim_{H}(U)`} /> makes sense (the equality in particular)<br/><br/>
@@ -79,15 +80,25 @@ class Applications extends React.Component {
                                 Such fractals we will not consider fractals, but are worth being aware of. An interesting question worth asking is if there are any connections to algebraic topology. The tempting answer to this is no since many of the interesting properties of these spaces are inherently related to the metric, not the Topology of the space itself since locally things are not so nice. However, there are 
                                 interesting questions one can ask if we restrict ourselves a bit: Define the well-behaved fundamental group <MathJax.Node inline formula={`\\pi_{U}^{wb}(x_{0}) = \\{[f]: I \\to U | f(0) = x_{0},\\text{ }f\\text{ continuous, and } \\dim_{H}(K) = 1\\text{ } \\forall{K \\subset f(I)}\\text{ open} \\}`} />. This well-behaved fundamental group is fundamentally different from the usual fundamental group since being path-connected 
                                 does not imply points have the same simple fundamental group. An example would be points that are connected through fractal that has fractional dimension. We can also form a "badly-behaved" fundamental group by taking paths that have fractional dimension along all open subsets of their image. The big question is if there is a natural decomposition of the original fundamental group into these two - or perhaps if we abelianize everything 
-                                using the power of singular homology things decompose...
+                                using the power of singular homology things decompose... I suspect the answer is no because there might be paths that are neither well-behaved nor badly-behaved, but how does this occur?
                             </p>
                             <p style={{textAlign:"left"}}>
                                 We now turn to the whole point of us understanding what the Hausorff dimension of an open nonempty subspace of <MathJax.Node inline formula={`R^{n}`} />; we say an attractor <MathJax.Node inline formula={`\\Lambda`} /> is strange if the dynamical system <MathJax.Node inline formula={`(\\Lambda, f)`} /> is chaotic and <MathJax.Node inline formula={`\\Lambda`} /> is a fractal. 
                                 <MathJax.Node inline formula={`\\Lambda`} /> is said to be fractal if <MathJax.Node inline formula={`\\dim_{H}(\\Lambda)`} /> is not an integer.
                             </p>
+                            <p style={{textAlign:"left"}}>
+                                <MathJax.Node inline formula={`\\Lambda`} /> is said to be attracting if it is compact and invariant under <MathJax.Node inline formula={`f`}/> (<MathJax.Node inline formula={`f(\\Lambda) = \\Lambda`} />) and there is a neighborhood <MathJax.Node inline formula={`U`} /> of <MathJax.Node inline formula={`\\Lambda`} /> s.t. <MathJax.Node inline formula={`d(f^{n}(x), \\Lambda)\\to 0`} /> as <MathJax.Node inline formula={`n \\to \\infty`} /> for all <MathJax.Node inline formula={`x\\in U`} />. Note that this d
+                                is not the diameter, but rather a metric. The definition of a repeller is analagous, so we won't spend any time on it. To give a basic example of an attracting set, just consider the set <MathJax.Node inline formula={`\\Lambda = \\{0\\}`} /> and the function <MathJax.Node inline formula={`f(x) = x^{2\\cdot{n}+1}`} />. <MathJax.Node inline formula={`f(0) = 0`} /> and <MathJax.Node inline formula={`(-\\frac{1}{2}, \\frac{1}{2})`} /> is the desired neighborhood.
+                            </p>
+                            <p style={{textAlign:"left"}}>
+                                Below we have a few of the famous Strange Attractors in no particular order.
+                            </p>
                             <img src={henon_3} style={{maxWidth: "70%", border:"2px solid black"}}/>
+                            <br/><br/>
                             <img src={lorenz_sys} style={{maxWidth: "70%", border:"2px solid black"}}/>
+                            <br/><br/>
                             <img src={rossier_sys} style={{maxWidth: "70%", border:"2px solid black"}}/>
+                            <br/><br/>
 
                         </div>
 
