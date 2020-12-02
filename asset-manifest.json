@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/Chaos-Theory/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/Chaos-Theory/static/js/main.3e6621a9.chunk.js",
-    "main.js.map": "/Chaos-Theory/static/js/main.3e6621a9.chunk.js.map",
+    "main.js": "/Chaos-Theory/static/js/main.5faedced.chunk.js",
+    "main.js.map": "/Chaos-Theory/static/js/main.5faedced.chunk.js.map",
     "runtime-main.js": "/Chaos-Theory/static/js/runtime-main.d3715587.js",
     "runtime-main.js.map": "/Chaos-Theory/static/js/runtime-main.d3715587.js.map",
     "static/css/2.af8dca29.chunk.css": "/Chaos-Theory/static/css/2.af8dca29.chunk.css",
-    "static/js/2.9c13e8a9.chunk.js": "/Chaos-Theory/static/js/2.9c13e8a9.chunk.js",
-    "static/js/2.9c13e8a9.chunk.js.map": "/Chaos-Theory/static/js/2.9c13e8a9.chunk.js.map",
+    "static/js/2.2b393d19.chunk.js": "/Chaos-Theory/static/js/2.2b393d19.chunk.js",
+    "static/js/2.2b393d19.chunk.js.map": "/Chaos-Theory/static/js/2.2b393d19.chunk.js.map",
     "static/js/3.df2a20d8.chunk.js": "/Chaos-Theory/static/js/3.df2a20d8.chunk.js",
     "static/js/3.df2a20d8.chunk.js.map": "/Chaos-Theory/static/js/3.df2a20d8.chunk.js.map",
     "index.html": "/Chaos-Theory/index.html",
     "static/css/2.af8dca29.chunk.css.map": "/Chaos-Theory/static/css/2.af8dca29.chunk.css.map",
     "static/css/main.8c8b27cf.chunk.css.map": "/Chaos-Theory/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.9c13e8a9.chunk.js.LICENSE.txt": "/Chaos-Theory/static/js/2.9c13e8a9.chunk.js.LICENSE.txt",
+    "static/js/2.2b393d19.chunk.js.LICENSE.txt": "/Chaos-Theory/static/js/2.2b393d19.chunk.js.LICENSE.txt",
     "static/media/Islamic-Fractal-Star-Interlaced-full.1e71d031.jpg": "/Chaos-Theory/static/media/Islamic-Fractal-Star-Interlaced-full.1e71d031.jpg",
     "static/media/Lorenzsimulation.e0f9719b.mov": "/Chaos-Theory/static/media/Lorenzsimulation.e0f9719b.mov",
     "static/media/Triadic_Cantor_Set.511664f3.png": "/Chaos-Theory/static/media/Triadic_Cantor_Set.511664f3.png",
+    "static/media/about_image.a3b8014e.jpg": "/Chaos-Theory/static/media/about_image.a3b8014e.jpg",
     "static/media/brian-wissman-strange-attractors.aee79580.jpg": "/Chaos-Theory/static/media/brian-wissman-strange-attractors.aee79580.jpg",
     "static/media/chaos_10000_simulations.e7f81830.jpg": "/Chaos-Theory/static/media/chaos_10000_simulations.e7f81830.jpg",
     "static/media/chaos_1000_simulations.a3bf0692.jpg": "/Chaos-Theory/static/media/chaos_1000_simulations.a3bf0692.jpg",
@@ -48,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.d3715587.js",
     "static/css/2.af8dca29.chunk.css",
-    "static/js/2.9c13e8a9.chunk.js",
+    "static/js/2.2b393d19.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.3e6621a9.chunk.js"
+    "static/js/main.5faedced.chunk.js"
   ]
 }
