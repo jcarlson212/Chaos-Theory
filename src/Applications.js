@@ -8,7 +8,10 @@ import brianwissmanstrangeattractors from './brian-wissman-strange-attractors.jp
 import henon_3 from './henon_3.jpg';
 import lorenz_sys from './lorenz_sys.jpg';
 import rossier_sys from './rossier_sys.jpg';
-
+import edges from './edges.png';
+import IslamicFractalStarInterlacedfull from './Islamic-Fractal-Star-Interlaced-full.jpg';
+import Triadic_Cantor_Set from './Triadic_Cantor_Set.png';
+import mandelbrot from './mandelbrot.gif'
 class Applications extends React.Component {
     state = {
         
@@ -51,6 +54,28 @@ class Applications extends React.Component {
                                 Proposition: <MathJax.Node inline formula={`\\dim_{H}(B_{1}(0)) = n`} /> <br/><br/>
                                 Proof: <MathJax.Node formula={`\\mu^{n}(B_{1}(0)) = \\lim_{\\delta\\to 0}\\inf\\{\\sum_{j} d(V_{j})^{n}\\text{ }|\\text{ }\\{V_{j}\\} \\text{ a delta cover of U} \\} = d(B_{1}(0))^{n} < \\infty`} /> Since only one such value can be finite (from above), we are done. 
                             </p>
+                            <p style={{textAlign:"left"}}>
+                                Notice that the Hausdorff dimension of a space is really just a measure of how rough the space is relative to the ambient space - for if there are too many "approximate hyperplanes" in the subspace, then the hasudorff dimension will be lowered, averaging the "higher dimensional" parts with the "lower dimensional" parts. To give you an idea of this, consider the following sequence of shapes:
+                                <br/><br/>
+                            </p>
+                                <img src={edges} style={{maxWidth: "70%", border:"2px solid black"}}/>
+                                <br/><br/>
+                            <p style={{textAlign:"left"}}>
+                                Notice how as we add triangles to our "star", our flaps become more 1-dimensional. If we keep the ends of some finite number of flaps in the original shape (say 6) and then repeat this process on the interior, we will eventially get a fractal looking somewhat like the following:
+                            </p>
+                                <img src={IslamicFractalStarInterlacedfull} style={{maxWidth: "30%", border:"2px solid black"}}/>
+                                <br/><br/>
+                            <p style={{textAlign:"left"}}>
+                                except some of the spots will be filled. This eventually will have parts that are too jagged if we increase the number of sides quick enough at each iteration. This is why many - but not all - fractals have fractional dimension. A famous one that has fractional dimension (most known ones do) is the Cantor set, with <MathJax.Node inline formula={`\\dim_{H}(C) = \\log_{3}(2)`} /> :
+                            </p>
+                            <img src={Triadic_Cantor_Set} style={{maxWidth: "70%"}}/>
+                            <br/><br/>
+                            <p style={{textAlign:"left"}}>
+                                The Cantor set is defined as <MathJax.Node inline formula={`C = \\cap_{i=0}^{\\infty} \\cup_{j=0, j \\neq 1 \\mod{2}}^{3^{i}} [\\frac{j}{3^{i}}, \\frac{j+1}{3^{i}}]` } />. This is a nowhere dense set with measure zero. An example of a fractal with integer Hasudorff dimension is the boundary of the Mendelbrot set, which has Hausdorff dimension 2:
+
+                            </p>
+                            <img src={mandelbrot} style={{maxWidth: "70%"}}/>
+                            <br/><br/>
                             <p style={{textAlign:"left"}}>
                                 We now turn to the whole point of us understanding what the Hausorff dimension of an open nonempty subspace of <MathJax.Node inline formula={`R^{n}`} />; we say an attractor <MathJax.Node inline formula={`\\Lambda`} /> is strange if the dynamical system <MathJax.Node inline formula={`(\\Lambda, f)`} /> is chaotic and <MathJax.Node inline formula={`\\Lambda`} /> is a fractal. 
                                 <MathJax.Node inline formula={`\\Lambda`} /> is said to be fractal if <MathJax.Node inline formula={`\\dim_{H}(\\Lambda)`} /> is not an integer.
