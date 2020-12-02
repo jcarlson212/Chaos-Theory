@@ -72,10 +72,15 @@ class Applications extends React.Component {
                             <br/><br/>
                             <p style={{textAlign:"left"}}>
                                 The Cantor set is defined as <MathJax.Node inline formula={`C = \\cap_{i=0}^{\\infty} \\cup_{j=0, j \\neq 1 \\mod{2}}^{3^{i}} [\\frac{j}{3^{i}}, \\frac{j+1}{3^{i}}]` } />. This is a nowhere dense set with measure zero. An example of a fractal with integer Hasudorff dimension is the boundary of the Mendelbrot set, which has Hausdorff dimension 2:
-
                             </p>
                             <img src={mandelbrot} style={{maxWidth: "70%"}}/>
                             <br/><br/>
+                            <p style={{textAlign:"left"}}>
+                                Such fractals we will not consider fractals, but are worth being aware of. An interesting question worth asking is if there are any connections to algebraic topology. The tempting answer to this is no since many of the interesting properties of these spaces are inherently related to the metric, not the Topology of the space itself since locally things are not so nice. However, there are 
+                                interesting questions one can ask if we restrict ourselves a bit: Define the well-behaved fundamental group <MathJax.Node inline formula={`\\pi_{U}^{wb}(x_{0}) = \\{[f]: I \\to U | f(0) = x_{0},\\text{ }f\\text{ continuous, and } \\dim_{H}(K) = 1\\text{ } \\forall{K \\subset f(I)}\\text{ open} \\}`} />. This well-behaved fundamental group is fundamentally different from the usual fundamental group since being path-connected 
+                                does not imply points have the same simple fundamental group. An example would be points that are connected through fractal that has fractional dimension. We can also form a "badly-behaved" fundamental group by taking paths that have fractional dimension along all open subsets of their image. The big question is if there is a natural decomposition of the original fundamental group into these two - or perhaps if we abelianize everything 
+                                using the power of singular homology things decompose...
+                            </p>
                             <p style={{textAlign:"left"}}>
                                 We now turn to the whole point of us understanding what the Hausorff dimension of an open nonempty subspace of <MathJax.Node inline formula={`R^{n}`} />; we say an attractor <MathJax.Node inline formula={`\\Lambda`} /> is strange if the dynamical system <MathJax.Node inline formula={`(\\Lambda, f)`} /> is chaotic and <MathJax.Node inline formula={`\\Lambda`} /> is a fractal. 
                                 <MathJax.Node inline formula={`\\Lambda`} /> is said to be fractal if <MathJax.Node inline formula={`\\dim_{H}(\\Lambda)`} /> is not an integer.
