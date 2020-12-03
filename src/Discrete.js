@@ -9,6 +9,7 @@ import stable_iterations from './stable_iterations.jpg';
 import shartoski from './shartoski.PNG';
 import shark_ex_3_pt from './shark_ex_3_pt.jpg';
 import shark_ex_diff_eqn from './shark_ex_diff_eqn.jpg';
+import unstable_iterate from './unstable_iterate.jpg'
 
 const tex = `f(x) = \\int_{-\\infty}^\\infty
 \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}
@@ -64,6 +65,8 @@ class Discrete extends React.Component {
                              </p>
                              <br/><br/>
                             <img src={stable_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
+                            <br/><br/>
+                            <img src={unstable_iterate} style={{maxWidth: "70%", border: "2px solid black"}} />
                             <br/><br/>
                             <p>Sharkovskii Theorem. Let <MathJax.Node inline formula={`f: I \\to I`} /> continuous for some interval <MathJax.Node inline formula={`I \\subset R`} />. Consider
                             the following ordering of the natural numbers (which is a total order, but not well-ordered):

@@ -11,7 +11,6 @@ import chaos_line_graph_1000_iterations from './chaos_line_graph_1000_iterations
 import new_double_map from './new_double_map.jpg'
 import new_tent_map_chaos from './new_tent_map_chaos.jpg'
 import doubling_map_0003 from './doubling_map_0003.jpg';
-import unstable_iterate from './unstable_iterate.jpg';
 
 class MotivationChaos extends React.Component {
     state = {
@@ -92,7 +91,6 @@ class MotivationChaos extends React.Component {
                             <br/><br/>
                             <img src={doubling_map_0003} style={{maxWidth: "70%", border: "2px solid black"}} />
                             <br/><br/>
-                            <img src={unstable_iterate} style={{maxWidth: "70%", border: "2px solid black"}} />
                         </div>
 
                     </MathJax.Provider>
