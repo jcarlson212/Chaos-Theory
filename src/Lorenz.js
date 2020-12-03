@@ -28,6 +28,15 @@ class Lorenz extends React.Component {
                     <br/><br/>
                     <img src={lorenz} style={{maxWidth: "70%"}} />
                     <br/><br/>
+                    <p>
+                    The Lorenz system served its original purpose to model certain aspects of weather. Specifically, many mathematicians at the time were trying to 
+                    model a single fluid particle being heated from below and cooled from above in order to make predictions on the weather. These models 
+                    were very complicated and often involved partial differential equations. Lorenz decided to simplify these models by just using a system of 
+                    nonlinear ordinary differential equations. The main interest in this model arises from the dynamics of the model itself, and not much its 
+                    effect of predicting the weather. So far in our class we have only covered “nice” differential equations which do not exhibit any chaos and can 
+                    actually be proved not to be chaotic by the Poincare Bendixson theorem. This model motivated many to begin formulating chaos theory and its 
+                    importance cannot be understated.
+                    </p>
                     <MathJax.Provider>
                         <div>
                         <Player

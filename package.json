@@ -18,7 +18,7 @@
     "video-react": "^0.14.1",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "https://jcarlson212.github.io/Chaos-Theory",
+  "homepage": "/Chaos-Theory",
   "scripts": {
     "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
