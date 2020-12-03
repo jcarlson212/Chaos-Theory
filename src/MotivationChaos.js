@@ -50,21 +50,33 @@ class MotivationChaos extends React.Component {
                                  Roughly speaking, this means that the initial conditions are sensitive and arbitrarily small regions visit every other region. The initial conditions are sensitive in the sense that
                                  if you try to approximate an input value, that approximation is not guranteed to work nomatter how accurate it is.
                              </p>
-                             <br/><br/>
+                             <br/>
+                             <p>
+                             Notice here that below is just the discrete logistic map. What looks like a nice differential equation actually is chaotic under given parameters. In this case, the parameter which represents growth is 4. On the unit interval, this discrete differential equation is chaotic and simulated below for various iteration:
+                             </p>
                             <img src={chaos_100_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/><br/>
                             <img src={chaos_1000_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/><br/>
                             <img src={chaos_10000_simulations} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/><br/>
+                            <p>
+                            Here is another cobweb plot which was demonstrated previously when we discussed fixed points. Notice that the differential equation ends up going everywhere in the domain of the function and after 1,000 iterations fills almost the entire plot:
+
+                            </p>
                             <img src={chaos_line_graph_100_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/><br/>
                             <img src={chaos_line_graph_1000_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/><br/>
+                            <p>
+                            Here we have the doubling map and the tent map. These are both very simple discrete differential equations which are very chaotic, and this is demonstrated below. Again, we have another cobweb map for the doubling map which shows how chaotic it is. Something to consider is that numerical error is a huge issue with these plots. At first, when simulating the cobweb plot for the doubling map it ended up producing an unexpected figure. Well, since chaotic systems are so sensitive to initial conditions, numerical error can greatly disturb what the plot should look like. This caused us to have to use far greater precision than normal to get the desired plot!
 
+                            </p>
                             <img src={new_double_map} style={{maxWidth: "70%", border: "2px solid black"}} />
                             <br/><br/>
                             <img src={new_tent_map_chaos} style={{maxWidth: "70%", border: "2px solid black"}} />
+                            <br/><br/>
+                            <img src={doubling_map_0003} style={{maxWidth: "70%", border: "2px solid black"}} />
                             <br/><br/>
 
                             <p>
@@ -88,9 +100,6 @@ class MotivationChaos extends React.Component {
                                 </ol>
                                 This completes the proof. I left out some quantifiers and definitions for <MathJax.Node inline formula={`\\epsilon > 0`} /> and <MathJax.Node inline formula={`n_{0}`} />, but it should be clear where they go (and if not, it would probably make a good exercise in finding where they go).
                             </p>
-                            <br/><br/>
-                            <img src={doubling_map_0003} style={{maxWidth: "70%", border: "2px solid black"}} />
-                            <br/><br/>
                         </div>
 
                     </MathJax.Provider>

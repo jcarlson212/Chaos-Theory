@@ -66,6 +66,9 @@ class Discrete extends React.Component {
                              <br/><br/>
                             <img src={stable_iterations} style={{maxWidth: "70%", border:"2px solid black"}} />
                             <br/><br/>
+                            <p>
+                            Below we have a fixed point at <MathJax.Node inline formula={`x = 0`} />. Clearly for  <MathJax.Node inline formula={`y = -3x,\\text{ } |y’| > 1`} /> therefore we have an unstable fixed point. Notice in the cobweb plot how the iterations are going away from this fixed point:
+                            </p>
                             <img src={unstable_iterate} style={{maxWidth: "70%", border: "2px solid black"}} />
                             <br/><br/>
                             <p>Sharkovskii Theorem. Let <MathJax.Node inline formula={`f: I \\to I`} /> continuous for some interval <MathJax.Node inline formula={`I \\subset R`} />. Consider
