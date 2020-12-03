@@ -43,7 +43,7 @@ class MotivationChaos extends React.Component {
                                  </li>
                                  <li>
                                      There exists some <MathJax.Node inline formula={`\\beta > 0`} /> s.t. for any <MathJax.Node inline formula={`x_{0} \\in [a,b]`} /> and neighborhood <MathJax.Node inline formula={`U`} />
-                                     of <MathJax.Node inline formula={`x_{0}`} /> there exists some <MathJax.Node inline formula={`y_{0} \\in U`} /> s.t. <MathJax.Node inline formula={`|f(x_{0}) - f(y_{0})| > \\beta`} />.
+                                     of <MathJax.Node inline formula={`x_{0}`} /> there exists some <MathJax.Node inline formula={`y_{0} \\in U`} /> s.t. for some <MathJax.Node inline formula={`n_{0}`} /> we have <MathJax.Node inline formula={`|f^{n_{0}}(x_{0}) - f^{n_{0}}(y_{0})| > \\beta`} />.
                                  </li>
                              </ol>
                              <p>
