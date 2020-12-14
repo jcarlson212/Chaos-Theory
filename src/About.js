@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Jumbotron, Container } from 'react-bootstrap';
 import React from 'react';
-import about_image from './about_image.jpg';
+import about_image from './images/about_image.jpg';
 
 class About extends React.Component {
     state = {

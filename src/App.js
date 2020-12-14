@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'video-react/dist/video-react.css'; // import css
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -42,7 +41,7 @@ class App extends React.Component {
       page_component = <Applications></Applications>
     }
     return (
-      <div className="App">
+      <div className="App" id="App">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Brand href="#home" onClick={ () => this.load_page("home") }>Chaos</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

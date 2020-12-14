@@ -2,16 +2,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Jumbotron, Container } from 'react-bootstrap';
 import React from 'react';
-import {XYPlot, LineSeries, MarkSeries, HeatmapSeries} from 'react-vis';
+import {XYPlot, HeatmapSeries} from 'react-vis';
 
 const particle_container_height = 700;
-const particle_container_width = 1000;
 const particle_count = 50;
 
 class Home extends React.Component {
     state = {
         data_red: [],
-        data_blue: []
+        data_blue: [],
+        current_max_width: 1000,
     }
 
     constructor(){
@@ -20,7 +20,7 @@ class Home extends React.Component {
         let i=0;
         for(i =0; i < particle_count; i++){
             data_red.push({
-                x: Math.random()*particle_container_width/2,
+                x: Math.random()*this.state.current_max_width/2,
                 y: Math.random()*particle_container_height
             })
         }
@@ -28,7 +28,7 @@ class Home extends React.Component {
         i=0;
         for(i =0; i < particle_count; i++){
             data_blue.push({
-                x: Math.random()*particle_container_width/2 + particle_container_width/2,
+                x: Math.random()*this.state.current_max_width/2 + this.state.current_max_width/2,
                 y: Math.random()*particle_container_height
             })
         }
@@ -38,9 +38,9 @@ class Home extends React.Component {
     }
 
     f = (num) => {
-        num = num / (1.0*particle_container_width);
+        num = num / (1.0*this.state.current_max_width);
         num = 4.0*num*(1 - num);
-        num = num*particle_container_width;
+        num = num*this.state.current_max_width;
         return num;
     }
 
@@ -74,9 +74,31 @@ class Home extends React.Component {
         })
     }
 
+    rescale_data = (new_max_width) => {
+        let i =0;
+        for(i=0; i < this.state.data_red.length; i++){
+            this.state.data_red[i]["x"] = (this.state.data_red[i]["x"] / (1.0*this.state.current_max_width))*new_max_width;
+        }
+        i =0;
+        for(i=0; i < this.state.data_blue.length; i++){
+            this.state.data_blue[i]["x"] = (this.state.data_blue[i]["x"] / (1.0*this.state.current_max_width))*new_max_width;
+        }
+    }
+
+    update_particle_container_width = () => {
+        const app_div = document.getElementById('App');
+        if(app_div != null){
+            const width = document.getElementById('App').clientWidth;
+            if(!isNaN(width)){
+                this.rescale_data(width*(3/4.0) + 1.0);
+                this.state.current_max_width = width*(3/4.0) + 1.0;
+            }
+        }
+    }
+
     render = () => {
-        const new_red_data = this.state.data_red;
-        const new_blue_data = this.state.data_blue;
+        this.update_particle_container_width()
+        
         return (
             <div>
                 <Jumbotron fluid>
@@ -85,9 +107,9 @@ class Home extends React.Component {
                         <i>
                         This is a website we made for our final project on Chaos Theory
                         </i>
-                        <XYPlot height={particle_container_height} width={particle_container_width}>
-                            <HeatmapSeries data={new_red_data} color="black" />
-                            <HeatmapSeries data={new_blue_data} color="red" />
+                        <XYPlot height={particle_container_height} width={this.state.current_max_width}>
+                            <HeatmapSeries data={this.state.data_red} color="black" />
+                            <HeatmapSeries data={this.state.data_blue} color="red" />
                         </XYPlot>
                     </Container>
                 </Jumbotron>

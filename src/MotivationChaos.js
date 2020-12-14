@@ -2,15 +2,14 @@ import { Jumbotron, Container, Image } from 'react-bootstrap';
 import React from 'react';
 import MathJax from 'react-mathjax'
 import './App.css';
-import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
-import chaos_100_simulations from './chaos_100_simulations.jpg'
-import chaos_1000_simulations from './chaos_1000_simulations.jpg'
-import chaos_10000_simulations from './chaos_10000_simulations.jpg'
-import chaos_line_graph_100_iterations from './chaos_line_graph_100_iterations.jpg'
-import chaos_line_graph_1000_iterations from './chaos_line_graph_1000_iterations.jpg'
-import new_double_map from './new_double_map.jpg'
-import new_tent_map_chaos from './new_tent_map_chaos.jpg'
-import doubling_map_0003 from './doubling_map_0003.jpg';
+import chaos_100_simulations from './images/chaos_100_simulations.jpg'
+import chaos_1000_simulations from './images/chaos_1000_simulations.jpg'
+import chaos_10000_simulations from './images/chaos_10000_simulations.jpg'
+import chaos_line_graph_100_iterations from './images/chaos_line_graph_100_iterations.jpg'
+import chaos_line_graph_1000_iterations from './images/chaos_line_graph_1000_iterations.jpg'
+import new_double_map from './images/new_double_map.jpg'
+import new_tent_map_chaos from './images/new_tent_map_chaos.jpg'
+import doubling_map_0003 from './images/doubling_map_0003.jpg';
 
 class MotivationChaos extends React.Component {
     state = {

@@ -1,15 +1,15 @@
 import './App.css';
-import { Jumbotron, Container, Image } from 'react-bootstrap';
+import { Jumbotron, Container } from 'react-bootstrap';
 import React from 'react';
 import MathJax from 'react-mathjax'
-import discrete_iteration_stable from './discrete_iteration_stable.jpg';
-import iterations_pt_2 from './iterations_pt_2.jpg';
-import iterations_pt_3 from './iterations_pt_3.jpg';
-import stable_iterations from './stable_iterations.jpg';
-import shartoski from './shartoski.PNG';
-import shark_ex_3_pt from './shark_ex_3_pt.jpg';
-import shark_ex_diff_eqn from './shark_ex_diff_eqn.jpg';
-import unstable_iterate from './unstable_iterate.jpg'
+import discrete_iteration_stable from './images/discrete_iteration_stable.jpg';
+import iterations_pt_2 from './images/iterations_pt_2.jpg';
+import iterations_pt_3 from './images/iterations_pt_3.jpg';
+import stable_iterations from './images/stable_iterations.jpg';
+import shartoski from './images/shartoski.PNG';
+import shark_ex_3_pt from './images/shark_ex_3_pt.jpg';
+import shark_ex_diff_eqn from './images/shark_ex_diff_eqn.jpg';
+import unstable_iterate from './images/unstable_iterate.jpg'
 
 const tex = `f(x) = \\int_{-\\infty}^\\infty
 \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}

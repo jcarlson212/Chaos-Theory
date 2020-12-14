@@ -1,14 +1,13 @@
 import { Jumbotron, Container } from 'react-bootstrap';
 import './App.css';
-import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
 import React from 'react';
 import { Player, ControlBar } from 'video-react';
 import MathJax from 'react-mathjax'
-import lorenz from './lorenz.jpg';
+import lorenz from './images/lorenz.jpg';
 import Lorenzsimulation from './Lorenzsimulation.mov';
-import lorenz_x_vs_t from './lorenz_x_vs_t.jpg';
-import lorenz_y_vs_t from './lorenz_y_vs_t.jpg';
-import lorenz_z_vs_t from './lorenz_z_vs_t.jpg';
+import lorenz_x_vs_t from './images/lorenz_x_vs_t.jpg';
+import lorenz_y_vs_t from './images/lorenz_y_vs_t.jpg';
+import lorenz_z_vs_t from './images/lorenz_z_vs_t.jpg';
 
 
 class Lorenz extends React.Component {

@@ -1,17 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
 import { Jumbotron, Container } from 'react-bootstrap';
 import MathJax from 'react-mathjax'
 import React from 'react';
-import brianwissmanstrangeattractors from './brian-wissman-strange-attractors.jpg';
-import henon_3 from './henon_3.jpg';
-import lorenz_sys from './lorenz_sys.jpg';
-import rossier_sys from './rossier_sys.jpg';
-import edges from './edges.png';
-import IslamicFractalStarInterlacedfull from './Islamic-Fractal-Star-Interlaced-full.jpg';
-import Triadic_Cantor_Set from './Triadic_Cantor_Set.png';
-import mandelbrot from './mandelbrot.gif'
+import brianwissmanstrangeattractors from './images/brian-wissman-strange-attractors.jpg';
+import henon_3 from './images/henon_3.jpg';
+import lorenz_sys from './images/lorenz_sys.jpg';
+import rossier_sys from './images/rossier_sys.jpg';
+import edges from './images/edges.png';
+import IslamicFractalStarInterlacedfull from './images/Islamic-Fractal-Star-Interlaced-full.jpg';
+import Triadic_Cantor_Set from './images/Triadic_Cantor_Set.png';
+import mandelbrot from './images/mandelbrot.gif'
 class Applications extends React.Component {
     state = {
         
