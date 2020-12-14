@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Chaos-Theory/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/Chaos-Theory/static/js/main.05727b29.chunk.js",
-    "main.js.map": "/Chaos-Theory/static/js/main.05727b29.chunk.js.map",
+    "main.css": "/Chaos-Theory/static/css/main.7d180cbf.chunk.css",
+    "main.js": "/Chaos-Theory/static/js/main.ae3dab91.chunk.js",
+    "main.js.map": "/Chaos-Theory/static/js/main.ae3dab91.chunk.js.map",
     "runtime-main.js": "/Chaos-Theory/static/js/runtime-main.d3715587.js",
     "runtime-main.js.map": "/Chaos-Theory/static/js/runtime-main.d3715587.js.map",
     "static/css/2.af8dca29.chunk.css": "/Chaos-Theory/static/css/2.af8dca29.chunk.css",
-    "static/js/2.2b393d19.chunk.js": "/Chaos-Theory/static/js/2.2b393d19.chunk.js",
-    "static/js/2.2b393d19.chunk.js.map": "/Chaos-Theory/static/js/2.2b393d19.chunk.js.map",
+    "static/js/2.f6e1661d.chunk.js": "/Chaos-Theory/static/js/2.f6e1661d.chunk.js",
+    "static/js/2.f6e1661d.chunk.js.map": "/Chaos-Theory/static/js/2.f6e1661d.chunk.js.map",
     "static/js/3.df2a20d8.chunk.js": "/Chaos-Theory/static/js/3.df2a20d8.chunk.js",
     "static/js/3.df2a20d8.chunk.js.map": "/Chaos-Theory/static/js/3.df2a20d8.chunk.js.map",
     "index.html": "/Chaos-Theory/index.html",
     "static/css/2.af8dca29.chunk.css.map": "/Chaos-Theory/static/css/2.af8dca29.chunk.css.map",
-    "static/css/main.8c8b27cf.chunk.css.map": "/Chaos-Theory/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.2b393d19.chunk.js.LICENSE.txt": "/Chaos-Theory/static/js/2.2b393d19.chunk.js.LICENSE.txt",
+    "static/css/main.7d180cbf.chunk.css.map": "/Chaos-Theory/static/css/main.7d180cbf.chunk.css.map",
+    "static/js/2.f6e1661d.chunk.js.LICENSE.txt": "/Chaos-Theory/static/js/2.f6e1661d.chunk.js.LICENSE.txt",
     "static/media/Islamic-Fractal-Star-Interlaced-full.1e71d031.jpg": "/Chaos-Theory/static/media/Islamic-Fractal-Star-Interlaced-full.1e71d031.jpg",
     "static/media/Lorenzsimulation.e0f9719b.mov": "/Chaos-Theory/static/media/Lorenzsimulation.e0f9719b.mov",
     "static/media/Triadic_Cantor_Set.511664f3.png": "/Chaos-Theory/static/media/Triadic_Cantor_Set.511664f3.png",
@@ -30,7 +30,6 @@
     "static/media/henon_3.477056f4.jpg": "/Chaos-Theory/static/media/henon_3.477056f4.jpg",
     "static/media/iterations_pt_2.4f848f38.jpg": "/Chaos-Theory/static/media/iterations_pt_2.4f848f38.jpg",
     "static/media/iterations_pt_3.9911ba8c.jpg": "/Chaos-Theory/static/media/iterations_pt_3.9911ba8c.jpg",
-    "static/media/logo.6ce24c58.svg": "/Chaos-Theory/static/media/logo.6ce24c58.svg",
     "static/media/lorenz.a2144680.jpg": "/Chaos-Theory/static/media/lorenz.a2144680.jpg",
     "static/media/lorenz_sys.70c5f984.jpg": "/Chaos-Theory/static/media/lorenz_sys.70c5f984.jpg",
     "static/media/lorenz_x_vs_t.2c775a13.jpg": "/Chaos-Theory/static/media/lorenz_x_vs_t.2c775a13.jpg",
@@ -49,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.d3715587.js",
     "static/css/2.af8dca29.chunk.css",
-    "static/js/2.2b393d19.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.05727b29.chunk.js"
+    "static/js/2.f6e1661d.chunk.js",
+    "static/css/main.7d180cbf.chunk.css",
+    "static/js/main.ae3dab91.chunk.js"
   ]
 }
